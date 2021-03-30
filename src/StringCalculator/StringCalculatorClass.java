@@ -5,6 +5,8 @@ public class StringCalculatorClass {
     public static int add(String numbers) {
         if (numbers.equals(""))
             return 0;
+        if (numbers.contains("\n"))
+            numbers = numbers.replace("\n", "");
         if (numbers.contains(",")) {
             String[] parts = numbers.split(",");
             int sum = 0;

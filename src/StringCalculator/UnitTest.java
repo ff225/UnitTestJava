@@ -20,6 +20,7 @@ public class UnitTest {
 
     @Test
     public void testManyNumbers() {
-        assertEquals(6, add("1,2,3"));
+
+        assertEquals(6, add("1,\n2,3"));
     }
 }
